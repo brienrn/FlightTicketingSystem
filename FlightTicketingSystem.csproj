@@ -67,9 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Schedule\FlightSchedule.aspx" />
+    <Content Include="Schedule\flightScheduleStyles.css" />
+    <Content Include="Schedule\imgSearch.png" />
+    <Content Include="Schedule\redo-arrow-symbol_44650.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Schedule\FlightSchedule.aspx.cs">
+      <DependentUpon>FlightSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\FlightSchedule.aspx.designer.cs">
+      <DependentUpon>FlightSchedule.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
