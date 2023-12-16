@@ -54,7 +54,12 @@
             <table class="custom-dropdown" style="width:100%;">
                 <tr>
                     <td>
-                        &nbsp;</td>
+                        <asp:DropDownList ID="ddlSearchFor" runat="server" Width="126px" CssClass="custom-dropdown">
+                            <asp:ListItem>Search for...</asp:ListItem>
+                            <asp:ListItem>Flight No</asp:ListItem>
+                            <asp:ListItem>Airline</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
                     <td class="auto-style4">
                         <asp:TextBox ID="txtSearchFor" runat="server" Width="373px" placeholder="Flight No / Airline" class="textbox"></asp:TextBox>
                     </td>
