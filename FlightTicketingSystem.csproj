@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AtasAnginDB.mdf" />
+    <Content Include="App_Data\AtasAnginDB_log.ldf">
+      <DependentUpon>AtasAnginDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Schedule\FlightSchedule.aspx" />
     <Content Include="Schedule\background1.jpg" />
     <Content Include="Schedule\flightScheduleStyles.css" />
@@ -100,6 +104,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MasterpageImage\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
