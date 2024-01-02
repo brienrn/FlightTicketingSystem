@@ -71,6 +71,13 @@
     <Content Include="App_Data\AtasAnginDB_log.ldf">
       <DependentUpon>AtasAnginDB.mdf</DependentUpon>
     </Content>
+    <Content Include="MasterpageImage\calender_icon.jpeg" />
+    <Content Include="MasterpageImage\fbBtn.jpeg" />
+    <Content Include="MasterpageImage\headerBckGrd.jpeg" />
+    <Content Include="MasterpageImage\line2.jpeg" />
+    <Content Include="MasterpageImage\logo.jpeg" />
+    <Content Include="MasterpageImage\twitter3.jpeg" />
+    <Content Include="MasterpageImage\WhatsApp Image 2023-12-16 at 8.26.21 PM.jpeg" />
     <Content Include="Schedule\FlightSchedule.aspx" />
     <Content Include="Schedule\background1.jpg" />
     <Content Include="Schedule\flightScheduleStyles.css" />
@@ -105,9 +112,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MasterpageImage\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

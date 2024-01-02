@@ -9,11 +9,12 @@
     <style type="text/css">
         .auto-style2 {
             height: 111px;
-            background: url('headerBckGrd.jpg') center;
+           
+            background: url("/MasterpageImage/headerBckGrd.jpeg") center;
         }
         .auto-style5 {
             height: 25px;
-            background:url('headerBckGrd.jpg') center;
+            background:url("/MasterpageImage/headerBckGrd.jpeg") center;
             color:white;
             }
         .auto-style6 {
@@ -42,9 +43,9 @@
             <table class="auto-style6">
                 <tr>
                     <td class="auto-style2" colspan="2">
-                        <asp:ImageButton ID="ImageButton1" runat="server" Height="130px" Width="162px" ImageUrl="logo.jpeg" />
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="130px" Width="162px" ImageUrl="/MasterpageImage/logo.jpeg" />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Image ID="Image2" runat="server" Height="122px" ImageUrl="line2.png" Width="175px" />
+                        <asp:Image ID="Image2" runat="server" Height="122px" ImageUrl="Images/line2.jpeg" Width="175px" />
 &nbsp;
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#66FF66">Home</asp:HyperLink>
@@ -52,7 +53,7 @@
 &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#66FF66">Schedule</asp:HyperLink>
 &nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="#66FF66">Booking</asp:HyperLink>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Image ID="Image4" runat="server" Height="122px" ImageUrl="line2.png" Width="161px" />
+                        <asp:Image ID="Image4" runat="server" Height="122px" ImageUrl="/MasterpageImage/line2.jpeg" Width="161px" />
                     &nbsp;&nbsp;</td>
                     <td class="auto-style2">
                         <br />
@@ -88,9 +89,9 @@
                         <br />
                         &nbsp;
                         Contact Us:
-                        <asp:ImageButton ID="ImageButton5" runat="server" Height="37px" ImageUrl="fbBtn.png" Width="36px" />
+                        <asp:ImageButton ID="ImageButton5" runat="server" Height="37px" ImageUrl="/MasterpageImage/fbBtn.jpeg" Width="36px" />
                         &nbsp;&nbsp;
-                        <asp:ImageButton ID="ImageButton7" runat="server" Height="38px" ImageUrl="twitter3.png" OnClick="ImageButton7_Click" Width="35px" />
+                        <asp:ImageButton ID="ImageButton7" runat="server" Height="38px" ImageUrl="/MasterpageImage/twitter3.jpeg" OnClick="ImageButton7_Click" Width="35px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: <a href="mailto:atasangin@gmail.com">atasangin@gmail.com</a><br />
                         <br />
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone No:<br />

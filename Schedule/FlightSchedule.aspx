@@ -33,7 +33,7 @@
         }
 
         .auto-style11 {
-            width: 577px;
+            width: 400px;
             height: 29px;
             padding-left: 150px;
         }
@@ -44,18 +44,20 @@
     </style>
 
 
-    <div class="container">
-        <h1>Flight Schedule</h1>
+    <div class="container" style="padding-top:20px; background-color:#423F3E">
+        <h1 style="color:ghostwhite;">Flight Schedule</h1>
         <br />
+    </div>
+    <div class="container">
 
         <table class="custom-dropdown" style="width: 100%;">
             <tr>
-                <td class="auto-style12">Airplane Number:</td>
+                <td class="auto-style12">Airplane Number</td>
                 <td class="auto-style4">
                     <asp:TextBox ID="txtSearchFor" runat="server" Width="373px" placeholder="Flight No" class="textbox"></asp:TextBox>
                 </td>
                 <td class="auto-style3">
-                    <asp:ImageButton ID="btnSearchFor" runat="server" Width="30px" Height="30px" ImageUrl="~/Schedule/imgSearch.png" />
+                    <asp:ImageButton ID="btnSearchFor" runat="server" Width="30px" Height="30px" ImageUrl="/Schedule/imgSearch.png" />
                 </td>
 
             </tr>
@@ -64,8 +66,11 @@
     <div class="container">
         <table class="custom-dropdown">
             <tr>
+                <td class="auto-style12">
+                    Departure Date
+                </td>
                 <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Departure Date<asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                    <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
                         <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
                         <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
                         <OtherMonthDayStyle ForeColor="#999999" />
