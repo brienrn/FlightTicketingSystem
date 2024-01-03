@@ -16,5 +16,14 @@ namespace FlightTicketingSystem
 
         }
 
+        protected void btnSearchFor_Click(object sender, ImageClickEventArgs e)
+        {
+           
+        }
+
+        private void FindFlightSchedule(string airplaneNumber)
+        {
+
+        }
     }
 }

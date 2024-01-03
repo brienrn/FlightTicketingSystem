@@ -15,24 +15,6 @@ namespace FlightTicketingSystem
     {
 
         /// <summary>
-        /// txtSearchFor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchFor;
-
-        /// <summary>
-        /// btnSearchFor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnSearchFor;
-
-        /// <summary>
         /// Calendar1 control.
         /// </summary>
         /// <remarks>
@@ -40,6 +22,15 @@ namespace FlightTicketingSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
+
+        /// <summary>
+        /// ddlDeptLocation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlDeptLocation;
 
         /// <summary>
         /// ddlDestination control.
@@ -60,31 +51,31 @@ namespace FlightTicketingSystem
         protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// btnClear control.
+        /// sdsDeptLocation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnClear;
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsDeptLocation;
 
         /// <summary>
-        /// SqlDataSource1 control.
+        /// sdsDestination control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsDestination;
 
         /// <summary>
-        /// SqlDataSource2 control.
+        /// sdsSchedule control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsSchedule;
 
         /// <summary>
         /// GridView1 control.

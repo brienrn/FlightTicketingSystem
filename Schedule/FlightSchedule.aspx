@@ -30,38 +30,27 @@
 
         .auto-style9 {
             height: 29px;
+            text-align: left;
         }
 
         .auto-style11 {
             width: 400px;
-            height: 29px;
-            padding-left: 150px;
+
+            padding: 10px;
+            padding-left:70px;
+            
         }
 
         .auto-style12 {
-            width: 161px;
+            width:auto;
+            text-align:center;
         }
     </style>
 
 
-    <div class="container" style="padding-top:20px; background-color:#423F3E">
+    <div class="container" style="padding-top:20px; background-color:#423F3E; width:100%;" >
         <h1 style="color:ghostwhite;">Flight Schedule</h1>
         <br />
-    </div>
-    <div class="container">
-
-        <table class="custom-dropdown" style="width: 100%;">
-            <tr>
-                <td class="auto-style12">Airplane Number</td>
-                <td class="auto-style4">
-                    <asp:TextBox ID="txtSearchFor" runat="server" Width="373px" placeholder="Flight No" class="textbox"></asp:TextBox>
-                </td>
-                <td class="auto-style3">
-                    <asp:ImageButton ID="btnSearchFor" runat="server" Width="30px" Height="30px" ImageUrl="/Schedule/imgSearch.png" />
-                </td>
-
-            </tr>
-        </table>
     </div>
     <div class="container">
         <table class="custom-dropdown">
@@ -69,6 +58,14 @@
                 <td class="auto-style12">
                     Departure Date
                 </td>
+                <td class="auto-style12">
+                    From
+                </td>
+                <td class="auto-style12">
+                    Destination
+                </td>
+            </tr>
+            <tr>
                 <td class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
                         <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
@@ -80,26 +77,45 @@
                     </asp:Calendar>
                 </td>
                 <td class="auto-style11">
-                    <asp:DropDownList ID="ddlDestination" runat="server" Width="192px" CssClass="custom-dropdown">
-                        <asp:ListItem>All destinations</asp:ListItem>
-                        <asp:ListItem>Domestic</asp:ListItem>
-                        <asp:ListItem>International</asp:ListItem>
+                    <asp:DropDownList ID="ddlDeptLocation" runat="server" Width="192px" CssClass="custom-dropdown" DataTextField="deptLocation" DataValueField="deptLocation" DataSourceID="sdsDeptLocation">
+
                     </asp:DropDownList>
-                    &nbsp;</td>
+                </td>
+                <td class="auto-style11">
+
+                    <asp:DropDownList ID="ddlDestination" runat="server" Width="192px" CssClass="custom-dropdown" DataTextField="destination" DataValueField="destination" DataSourceID="sdsDestination" AutoPostBack="True">
+
+                    </asp:DropDownList>
+                    </td>
+
+            </tr>
+            <tr>
                 <td class="auto-style9">
+                    <br />
                     <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="button" />
-                    <br />
-                    <br />
-                    <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="button" />
+   
+                    
+                   <%-- <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="button" />--%>
                 </td>
             </tr>
         </table>
     </div>
     <div class="container">
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="sdsDeptLocation" runat="server" ConnectionString="<%$ ConnectionStrings:AtasAnginDB %>" SelectCommand="SELECT DISTINCT deptLocation FROM Schedule ORDER BY deptLocation"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="sdsDestination" runat="server" ConnectionString="<%$ ConnectionStrings:AtasAnginDB %>" SelectCommand="SELECT DISTINCT destination FROM Schedule ORDER BY destination"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="sdsSchedule" runat="server" ConnectionString="<%$ ConnectionStrings:AtasAnginDB %>" SelectCommand="SELECT planeID AS [Plane Number], deptTime AS [Departure Time], deptLocation AS [From], destination AS [To], gateNumber AS Gate FROM Schedule WHERE (deptLocation = @deptLocation) AND (destination = @destination) AND (deptDate = @deptDate) ORDER BY [Departure Time]">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="ddlDeptLocation" PropertyName="SelectedValue" DefaultValue="Departure Location" Name="deptLocation"></asp:ControlParameter>
+                <asp:ControlParameter ControlID="ddlDestination" PropertyName="SelectedValue" DefaultValue="Destination" Name="destination"></asp:ControlParameter>
+                <asp:ControlParameter ControlID="Calendar1" PropertyName="SelectedDate" DefaultValue="" Name="deptDate"></asp:ControlParameter>
+            </SelectParameters>
+        </asp:SqlDataSource>
+       
         <br />
-        <asp:GridView ID="GridView1" runat="server" Width="100%" CssClass="gridview">
+        <asp:GridView ID="GridView1" runat="server" Width="100%" CssClass="gridview" AllowPaging="True" DataSourceID="sdsSchedule" AllowSorting="True">
+            <Columns>
+                <asp:CommandField ShowSelectButton="True"></asp:CommandField>
+            </Columns>
         </asp:GridView>
         <br />
     </div>
