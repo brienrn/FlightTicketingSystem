@@ -33,6 +33,24 @@ namespace FlightTicketingSystem
         protected global::System.Web.UI.WebControls.TextBox txtScheduleID;
 
         /// <summary>
+        /// revScheduleID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revScheduleID;
+
+        /// <summary>
+        /// rfvScheduleID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvScheduleID;
+
+        /// <summary>
         /// lblPlaneID control.
         /// </summary>
         /// <remarks>
@@ -49,6 +67,24 @@ namespace FlightTicketingSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPlaneID;
+
+        /// <summary>
+        /// revPlaneID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revPlaneID;
+
+        /// <summary>
+        /// rfvPlaneID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPlaneID;
 
         /// <summary>
         /// lblDeptTime control.
@@ -69,6 +105,15 @@ namespace FlightTicketingSystem
         protected global::System.Web.UI.WebControls.TextBox txtDeptTime;
 
         /// <summary>
+        /// rfvDeptTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDeptTime;
+
+        /// <summary>
         /// lblDeptDate control.
         /// </summary>
         /// <remarks>
@@ -85,6 +130,15 @@ namespace FlightTicketingSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDeptDate;
+
+        /// <summary>
+        /// rfvDeptDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDeptDate;
 
         /// <summary>
         /// lblDeptLocation control.
@@ -105,6 +159,15 @@ namespace FlightTicketingSystem
         protected global::System.Web.UI.WebControls.TextBox txtDeptLocation;
 
         /// <summary>
+        /// rfvDeptLocation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDeptLocation;
+
+        /// <summary>
         /// lblDestination control.
         /// </summary>
         /// <remarks>
@@ -121,6 +184,15 @@ namespace FlightTicketingSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDestination;
+
+        /// <summary>
+        /// rfvTxtDestination control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTxtDestination;
 
         /// <summary>
         /// lblGateNumber control.
@@ -141,6 +213,24 @@ namespace FlightTicketingSystem
         protected global::System.Web.UI.WebControls.TextBox txtGateNumber;
 
         /// <summary>
+        /// revGateNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revGateNumber;
+
+        /// <summary>
+        /// rfvGateNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvGateNumber;
+
+        /// <summary>
         /// lblFlightStatus control.
         /// </summary>
         /// <remarks>
@@ -157,6 +247,15 @@ namespace FlightTicketingSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFlightStatus;
+
+        /// <summary>
+        /// rfvFlightStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFlightStatus;
 
         /// <summary>
         /// lblPrice control.
@@ -177,6 +276,15 @@ namespace FlightTicketingSystem
         protected global::System.Web.UI.WebControls.TextBox txtPrice;
 
         /// <summary>
+        /// rfvPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPrice;
+
+        /// <summary>
         /// lblAdminID control.
         /// </summary>
         /// <remarks>
@@ -193,6 +301,33 @@ namespace FlightTicketingSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAdminID;
+
+        /// <summary>
+        /// revAdminID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revAdminID;
+
+        /// <summary>
+        /// rfvAdminID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAdminID;
+
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
 
         /// <summary>
         /// btnConfirm control.
