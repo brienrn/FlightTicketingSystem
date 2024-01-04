@@ -83,8 +83,7 @@
                 </td>
                 <td class="auto-style11">
 
-                    <asp:DropDownList ID="ddlDestination" runat="server" Width="192px" CssClass="custom-dropdown" DataTextField="destination" DataValueField="destination" DataSourceID="sdsDestination" AutoPostBack="True">
-
+                    <asp:DropDownList ID="ddlDestination" runat="server" Width="192px" CssClass="custom-dropdown" DataTextField="destination" DataValueField="destination" DataSourceID="sdsDestination">
                     </asp:DropDownList>
                     </td>
 
@@ -92,7 +91,7 @@
             <tr>
                 <td class="auto-style9">
                     <br />
-                    <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="button" />
+                    <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="button" OnClick="btnSearch_Click" />
    
                     
                    <%-- <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="button" />--%>
@@ -112,12 +111,10 @@
         </asp:SqlDataSource>
        
         <br />
-        <asp:GridView ID="GridView1" runat="server" Width="100%" CssClass="gridview" AllowPaging="True" DataSourceID="sdsSchedule" AllowSorting="True">
-            <Columns>
-                <asp:CommandField ShowSelectButton="True"></asp:CommandField>
-            </Columns>
-        </asp:GridView>
+        <asp:GridView ID="GridView1" runat="server" Width="100%" CssClass="gridview" AllowPaging="True" DataSourceID="sdsSchedule" AllowSorting="True"></asp:GridView>
         <br />
+        <br />
+        <asp:Button ID="btnNextPage" runat="server" Text="Next Page" PostBackUrl="~/adminSchedule/adminSchedule.aspx" />
     </div>
 
 </asp:Content>

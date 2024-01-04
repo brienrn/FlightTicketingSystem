@@ -67,10 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminSchedule\adminflightScheduleStyles.css" />
+    <Content Include="adminSchedule\adminSchedule.aspx" />
     <Content Include="App_Data\AtasAnginDB.mdf" />
     <Content Include="App_Data\AtasAnginDB_log.ldf">
       <DependentUpon>AtasAnginDB.mdf</DependentUpon>
     </Content>
+    <Content Include="adminSchedule\inputSchedule.aspx" />
     <Content Include="MasterpageImage\calender_icon.jpeg" />
     <Content Include="MasterpageImage\fbBtn.jpeg" />
     <Content Include="MasterpageImage\headerBckGrd.jpeg" />
@@ -86,6 +89,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminSchedule\adminSchedule.aspx.cs">
+      <DependentUpon>adminSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSchedule\adminSchedule.aspx.designer.cs">
+      <DependentUpon>adminSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminSchedule\inputSchedule.aspx.cs">
+      <DependentUpon>inputSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSchedule\inputSchedule.aspx.designer.cs">
+      <DependentUpon>inputSchedule.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Schedule\FlightSchedule.aspx.cs">
       <DependentUpon>FlightSchedule.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
